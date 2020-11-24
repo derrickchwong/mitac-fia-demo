@@ -1,1 +1,6 @@
 management.endpoints.web.exposure.include: "*"
+spring:
+  boot:
+    admin:
+      client:
+        url: http://sba-server.test.svc.cluster.local:8081

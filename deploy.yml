@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mitac-fia-demo
+  name: mitac-fia-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mitac-fia-demo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mitac-fia-demo
+    spec:
+      containers:
+        - image: derrickchwong/mitac-fia-demo:0.0.1-SNAPSHOT
+          name: mitac-fia-demo
+          imagePullPolicy: Always
+          resources: {}
+status: {}
