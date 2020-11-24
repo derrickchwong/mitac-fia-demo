@@ -4,3 +4,5 @@ spring:
     admin:
       client:
         url: http://sba-server.test.svc.cluster.local:8081
+        instance:
+          service-url: http://mitac-fia-demo.test.svc.cluster.local:8080
