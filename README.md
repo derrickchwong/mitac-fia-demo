@@ -5,6 +5,11 @@ Use KP command to create Docker image with source code in localhost
 kp image create mitac-fia-demo --tag <repo>/mitac-fia-demo:0.0.1-SNAPSHOT --local-path .
 ```
 
+To change the JVM version, specify using --env
+```
+kp image create mitac-fia-demo-java8 --tag <repo>/mitac-fia-demo-java8:0.0.1-SNAPSHOT --local-path . --env "BP_JVM_VERSION=8.*"
+```
+
 Check the log of image build
 ```
 kp build logs mitac-fia-demo
